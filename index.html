@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kantor walut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Kalkulator walut</legend>
+          <p>
+            <label>
+              <span class="form__labelText"> Wpisz kwotę w PLN:</span>
+              <input
+                class="form__field js-pln"
+                type="number"
+                name="money"
+                min="0"
+                step="any"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText"> Wybierz walutę:</span>
+              <select
+                name="currency"
+                type="select"
+                class="form__field form__field--size js-currency"
+              >
+                <option value="0.2" selected>EUR</option>
+                <option value="0.21">USD</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <span class="form__labelText"> Twój wynik to: </span
+            ><strong class="form__result js-result">N/A</strong>
+          </p>
+        </fieldset>
+        <p><button type="submit" class="form__button">Przelicz</button></p>
+        <p>
+          <button type="reset" value="reset" class="form__button">
+            wyczyść
+          </button>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
