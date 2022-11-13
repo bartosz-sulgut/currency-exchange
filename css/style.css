@@ -10,3 +10,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.element {
+  background-image: url("../images/background.jpg");
+}
